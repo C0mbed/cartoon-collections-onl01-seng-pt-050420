@@ -19,10 +19,9 @@ def long_planeteer_calls(calls)
     puts "The #{count} is the count"
     if count > 4
       return true
-    else
-      return false
     end
-  end  
+  end 
+  return false
 end
 
 def find_the_cheese(foods)
