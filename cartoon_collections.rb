@@ -26,7 +26,7 @@ end
 
 def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
-    if foods.include?(cheese_types)
+    if shared = [1,2,3,'A'] & (1..9).to_a
       cheese_found = foods.select {|food| food == cheese_types}
       return cheese_found
     else
