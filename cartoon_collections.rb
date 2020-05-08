@@ -4,7 +4,7 @@ def roll_call_dwarves(dwarves)
   end
 end
 
-def summon_captain_planet(paneteer_calls)
+def summon_captain_planet(planeteer_calls)
   upgraded_calls = []
   planeteer_calls.each do |call|
     current = call.capitalize()
