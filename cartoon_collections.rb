@@ -26,9 +26,9 @@ end
 
 def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
-    if shared = [1,2,3,'A'] & (1..9).to_a
-      cheese_found = foods.select {|food| food == cheese_types}
-      return cheese_found
+  shared = foods & cheese_types.to_a
+    if shared.length < 0
+      return shared
     else
       return nil
     end
