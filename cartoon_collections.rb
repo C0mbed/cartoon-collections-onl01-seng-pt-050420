@@ -16,6 +16,7 @@ end
 def long_planeteer_calls(calls)
   calls.each do |call|
     count = call.length
+    puts "The #{count} is the count"
     if count > 4
       return true
     else
