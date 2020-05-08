@@ -28,7 +28,7 @@ def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
   shared = foods & cheese_types.to_a
     if shared.length > 0
-      return shared.to_s
+      return shared[0]
     else
       return nil
     end
