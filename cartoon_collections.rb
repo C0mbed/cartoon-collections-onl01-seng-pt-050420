@@ -26,6 +26,6 @@ end
 
 def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_found = foods.select {|e| e == cheese_types}
+  cheese_found = foods.select {|food| food == cheese_types}
   return cheese_found
 end
